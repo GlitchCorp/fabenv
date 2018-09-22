@@ -1,7 +1,13 @@
 from setuptools import setup
 
+# Version info -- read without importing
+_locals = {}
+with open("fabenv/_version.py") as fp:
+    exec(fp.read(), None, _locals)
+version = _locals["__version__"]
+
 setup(name='fabenv',
-      version='0.1',
+      version=version,
       description='',
       url='http://github.com/glitchcorp/fabenv',
       author='Mariusz Masztalerczuk',
