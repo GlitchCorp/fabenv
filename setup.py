@@ -8,4 +8,7 @@ setup(name='fabenv',
       author_email='mariusz@glitchcorp.com',
       license='MIT',
       packages=['fabenv'],
+      install_requires=[
+          'patchwork'
+      ],
       zip_safe=False)
